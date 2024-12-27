@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/style.css"> <!-- ملف CSS الخاص بك -->
+  </head>
+  <body>
+    
+    
+    <header>
+      <div class="navbaer">
+        <div class="menu-btn" onclick="toggleMenu()"><span class="navbar">☰</span></div>
+        <a href="#" class="logo">Dix <span>Food </span></a>
+      </div>
+      <!-- زر القائمة --> 
+      <nav id="navMenu">
+        <a href="#" class="active">Home</a>
+        <a href="/procut.html">menu</a>
+        <a href="#abonnement">abonnement</a>
+        <a href="#Contact">Contact</a>
+        <a href="/index.html">Marché</a>
+      </nav>
+      <a href="/card.html" class="view-cart-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+
+  <img  class="Untitled" src="/img/dix.gif" alt="">
+
+      
+  
+
+  <div class="title-container">
+    <h1 class="styled-title">Nouilles</h1>
+    <hr class="styled-hr">
+  </div>
+
+
+  
+
+      
+
+  
+  
+  
+<section class="carts">
+  
+  <div class="card">
+    <div class="card-img">
+        <div class="img"><img src="/img-food/WhatsApp Image 2024-12-24 at 23.14.41_23241cd4.jpg" alt=""></div>
+    </div>
+    <div class="card-title">أرز و فخذ دجاج مع خضار مشوية</div>
+    <div class="card-subtitle">
+        <ul class="nutrition-list">
+            <li>PROTEIN: <strong>42g</strong></li>
+            <li>CARB: <strong>56g</strong></li>
+            <li>FAT: <strong>22g</strong></li>
+            <li>CALORIES: <strong>208</strong></li>
+          </ul>
+        </div>
+        
+        <div class="counters">
+          <div id="counters->أرز و فخذ دجاج مع خضار مشوية">1</div>
+          <button onclick="updateCounters('increase', 'counters->أرز و فخذ دجاج مع خضار مشوية')">+</button>
+          <button onclick="updateCounters('decrease', 'counters->أرز و فخذ دجاج مع خضار مشوية')">-</button>
+        </div>
+        
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">17.5<span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('أرز و فخذ دجاج مع خضار مشوية',1750, 4200, 5600, 2200, 20800, document.getElementById('counters->أرز و فخذ دجاج مع خضار مشوية').innerText)">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+  <div class="card-more">
+      <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+      <p class="hidden-paragraph">
+        "تعود أصول أرز وفخذ الدجاج مع الخضار المشوية إلى العصور القديمة، حيث كان الطهاة في الشرق الأوسط يبتكرون أطباقًا غنية بالنكهات الطبيعية التي تمنح الجسم القوة والطاقة. يُقال إن هذا الطبق كان مفضلًا لدى التجار والمزارعين الذين كانوا في حاجة إلى طعام متكامل يُمدهم بالقوة لرحلاتهم الطويلة.  
+
+        الطبق كان يجمع بين الأرز كغذاء أساسي، وفخذ الدجاج المشوي الغني بالبروتين، مع الخضار المشوية التي تضيف نكهة لذيذة وفوائد صحية.  
+        
+        اليوم، نعيد تقديم هذا الطبق المميز مع أرز وفخذ الدجاج مع الخضار المشوية، الوجبة التي تمنحك طاقة وصحة في كل قضمة."
+      </p>
+  </div>
+</div>
+
+
+  
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img-food/أرز بطير السمان المحشو بالجبن.jpg" alt=""></div>
+  </div>
+  <div class="card-title">أرز بطير السمان المحشو بالجبن</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>53g</strong></li>
+          <li>CARB: <strong>44g</strong></li>
+          <li>FAT: <strong>32g</strong></li>
+          <li>CALORIES: <strong>686</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-أرز بطير السمان المحشو بالجبن">1</div>
+        <button onclick="updateCounters('increase', 'counters-أرز بطير السمان المحشو بالجبن')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-أرز بطير السمان المحشو بالجبن')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">17.6<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('أرز بطير السمان المحشو بالجبن', 1760, 5300, 4400, 3200, 68600, document.getElementById('counters-أرز بطير السمان المحشو بالجبن').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      "يقال إن أرز طير السمان المحشو بالجبن يعود إلى المطبخ الفارسي القديم، حيث كان الطهاة المبدعون يبحثون عن طرق لابتكار أطباق مميزة تجمع بين الفخامة والطعم الفريد. كان طير السمان، الطائر الصغير الذي يتميز بلحمه الطري، يُعتبر طعامًا مفضلًا لدى الطبقات الرفيعة في البلاط الفارسي، حيث كان يُحشى بالجبن الغني ويقدم مع الأرز في وجبة فاخرة تمنح الجسم الطاقة والانتعاش.
+
+      اليوم، نعيد إحياء هذا التقليد الفاخر مع أرز بطير السمان المحشو بالجبن، حيث يجتمع الأرز اللذيذ مع لحم السمان الطري المحشو بالجبن الذائب، ليمنحك تجربة طعام غنية بالنكهات والتاريخ."    </p>
+</div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img-food/نودلز صينية بالدجاج.jpg" alt=""></div>
+  </div>
+  <div class="card-title">نودلز صينية بالدجاج</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>42g</strong></li>
+          <li>CARB: <strong>67g</strong></li>
+          <li>FAT: <strong>7g</strong></li>
+          <li>CALORIES: <strong>485</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-نودلز صينية بالدجاج">1</div>
+        <button onclick="updateCounters('increase', 'counters-نودلز صينية بالدجاج')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-نودلز صينية بالدجاج')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">22<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('نودلز صينية بالدجاج', 2200, 4200, 6700, 700, 48500, document.getElementById('counters-نودلز صينية بالدجاج').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      "يعود أصل نودلز الصينية بالدجاج إلى المطبخ الصيني التقليدي، حيث ابتكر الطهاة في عهد أسرة تانغ (618-907م) هذا الطبق كوجبة متكاملة تجمع بين النكهات المتنوعة والتقنيات المبتكرة في الطهي. كانت النودلز في الصين تُعد من المكونات الأساسية، ويمزجها الطهاة مع البروتينات مثل الدجاج والخضار الطازجة لإنتاج وجبة سريعة، مغذية، وشهية.
+
+      اليوم، نعيد إحياء هذا التقليد مع نودلز صينية بالدجاج، حيث تتناغم النودلز الطرية مع قطع الدجاج المشوي، وتُضاف التوابل الصينية التي تمنحها طعماً مميزاً وغنياً. وجبة صحية وسريعة تمنحك طاقة وحيوية في كل قضمة."
+    </p>
+</div>
+</div>
+
+
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img-food/أرز ثلاثي دجاج مشوي.jpg" alt=""></div>
+  </div>
+  <div class="card-title">أرز ثلاثي دجاج مشوي</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>97g</strong></li>
+          <li>CARB: <strong>43g</strong></li>
+          <li>FAT: <strong>11g</strong></li>
+          <li>CALORIES: <strong>690</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-أرز ثلاثي دجاج مشوي">1</div>
+        <button onclick="updateCounters('increase', 'counters-أرز ثلاثي دجاج مشوي')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-أرز ثلاثي دجاج مشوي')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">22.6<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('أرز ثلاثي دجاج مشوي', 2260, 9700, 4300, 1100, 31550, document.getElementById('counters-أرز ثلاثي دجاج مشوي').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      "الأرز الثلاثي بالدجاج المشوي هو ابتكار حديث يدمج بين التنوع والنكهات المميزة. يُقال إن هذا الطبق مستوحى من المأكولات العالمية التي تركز على إبراز نكهات متعددة في وجبة واحدة. تمثل كل مجموعة من الدجاج طابعًا مختلفًا: 
+
+      - الدجاج المغمّس في العسل يعكس حلاوة النكهات الشرقية،  
+      - الدجاج المغمّس في حبوب السمسم يُبرز الطابع الآسيوي بقوامه المقرمش،  
+      - والدجاج المغمّس في الموتارد (الخردل) يُضيف لمسة أوروبية حادة ومميزة.  
+      
+      يُقدَّم الدجاج فوق سرير من الأرز المتبّل بخفة، مما يجمع بين النكهات المتباينة في وجبة متناغمة. 
+      
+      اليوم، يُعد هذا الطبق خيارًا رائعًا لكل من يبحث عن تجربة طعام تأخذك في رحلة عبر الثقافات بنكهة واحدة."    </p>
+</div>
+</div>
+
+
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img-food/برغل بالدجاج.jpg" alt=""></div>
+  </div>
+  <div class="card-title">برغل بالدجاج</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>34.2g</strong></li>
+          <li>CARB: <strong>38.5g</strong></li>
+          <li>FAT: <strong>9.6g</strong></li>
+          <li>CALORIES: <strong>430</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-برغل بالدجاج">1</div>
+        <button onclick="updateCounters('increase', 'counters-برغل بالدجاج')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-برغل بالدجاج')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">16<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('برغل بالدجاج', 1600, 3420, 3850, 960.0, 43000, document.getElementById('counters-برغل بالدجاج').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      "يعود أصل طبق البرغل بالدجاج إلى المطبخ الشرقي التقليدي، حيث كان البرغل يُعد طعامًا أساسيًا في مناطق الشام وتركيا. يُقال إن هذا الطبق كان يُحضّر في القرى كوجبة غنية بالطاقة والفوائد الصحية، حيث يتم طهي البرغل مع قطع الدجاج المحمّرة والمطيبة بالتوابل العطرية، ليمنح الجسم التغذية التي يحتاجها خلال أيام العمل الشاقة.
+
+      كان البرغل يُعتبر من الأطعمة الأساسية التي تحافظ على الشبع والطاقة، وكان يُقدّم في العزائم والموائد الكبيرة.  
+      
+      اليوم، نُقدّم لك برغل بالدجاج، حيث يلتقي الطعم الغني للبرغل مع لحم الدجاج الطري ليمنحك وجبة متكاملة من الصحة والنكهة في كل قضمة."    </p>
+</div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img-food/أرز بأجنحة الدجاج المشوية.jpg" alt=""></div>
+  </div>
+  <div class="card-title">أرز بأجنحة الدجاج المشوية</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>68.3g</strong></li>
+          <li>CARB: <strong>32g</strong></li>
+          <li>FAT: <strong>42.5g</strong></li>
+          <li>CALORIES: <strong>760.5</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-أرز بأجنحة الدجاج المشوية">1</div>
+        <button onclick="updateCounters('increase', 'counters-أرز بأجنحة الدجاج المشوية')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-أرز بأجنحة الدجاج المشوية')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">8.9<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('أرز بأجنحة الدجاج المشوية', 8090, 6830, 3200, 4250.0, 76050, document.getElementById('counters-أرز بأجنحة الدجاج المشوية').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      "يعود أصل طبق أرز بأجنحة الدجاج المشوية إلى المطبخ العربي التقليدي، حيث كان يُعتبر طعامًا غنيًا ومغذيًا يُحضّر في مناسبات العائلة والاحتفالات. كان الطهاة في المناطق العربية يستخدمون الأرز كمكون أساسي، ويشويه الطهاة أجنحة الدجاج فوق الفحم أو في الفرن، ليحصلوا على نكهة مدخنة تُكمل طعم الأرز المتبّل.  
+
+      يُقال إن هذا الطبق كان يُقدّم للضيوف كأشهى وأفخم الوجبات، بفضل مزيج الأرز الغني بالأعشاب مع أجنحة الدجاج المشوية الطرية.  
+      
+      اليوم، نقدم لك أرز بأجنحة الدجاج المشوية، حيث تتناغم نكهة الأرز المتبّل مع الأجنحة المشوية لتمنحك تجربة طعام لذيذة وصحية تُعيد لك أجواء الطهي التقليدي."
+          </p>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img-food/همبرغر.jpg" alt=""></div>
+  </div>
+  <div class="card-title">همبرغر بصدر الدجاج المفروم</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>68.3g</strong></li>
+          <li>CARB: <strong>32g</strong></li>
+          <li>FAT: <strong>42.5g</strong></li>
+          <li>CALORIES: <strong>760.5</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Caille rotti">1</div>
+        <button onclick="updateCounters('increase', 'counters-همبرغر')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-همبرغر')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">13.4<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('همبرغر', 1340, 6830, 3200, 4250.0, 76050, document.getElementById('counters-همبرغر').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      "يقال إن همبرغر الدجاج المفروم قد نشأ في المطبخ الأمريكي في أواخر القرن الـ19، حيث بدأ الطهاة في تقديمه كبديل صحي للهمبرغر التقليدي المصنوع من اللحم البقري. كان صدر الدجاج المفروم يُستخدم لصنع البرجر الطري، الغني بالبروتين، ويُقدّم مع المكونات الطازجة كخيار مغذي ولذيذ.
+
+      انتشر هذا الطبق بسرعة في المطاعم والأكشاك، حيث أصبح محبوبًا من قبل الباحثين عن طعام شهي وصحي في نفس الوقت.  
+      
+      اليوم، نُقدم لك همبرغر بصدر الدجاج المفروم، حيث يجتمع الطعم الرائع مع الفوائد الصحية لتستمتع بوجبة خفيفة ولذيذة تلبي احتياجاتك الغذائية."</div>
+</div>
+
+
+
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img-food/معكرونة الحبوب الكاملة مع صدور الدجاج.jpg" alt=""></div>
+  </div>
+  <div class="card-title">معكرونة الحبوب الكاملة مع صدور الدجاج</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+        <li><strong>PROTEIN:</strong> 101g</li>
+        <li><strong>CARB:</strong> 35g</li>
+        <li><strong>FAT:</strong> 6.8g</li>
+        <li><strong>CALORIES:</strong> 632</li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Caille rotti">1</div>
+        <button onclick="updateCounters('increase', 'counters-معكرونة الحبوب الكاملة مع صدور الدجاج')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-معكرونة الحبوب الكاملة مع صدور الدجاج')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">14.6<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('معكرونة الحبوب الكاملة مع صدور الدجاج', 1460, 10000, 3500, 6080.0, 63200, document.getElementById('counters-معكرونة الحبوب الكاملة مع صدور الدجاج').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      جبدنا على القطايع الكل متع الدجاج... أما فما قطعة ماحكيناش منع جواج مسوطين ومرشوشين بالجلجلان و مصبوب علاهم العسل... حاجة مقربعة وبنينة وصحية...    </p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img/Caille rotti.jpg" alt=""></div>
+  </div>
+  <div class="card-title">Ailerons de poulet</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>68.3g</strong></li>
+          <li>CARB: <strong>32g</strong></li>
+          <li>FAT: <strong>42.5g</strong></li>
+          <li>CALORIES: <strong>760.5</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Caille rotti">1</div>
+        <button onclick="updateCounters('increase', 'counters-Ailerons de poulet')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-Ailerons de poulet')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">13.2<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('Ailerons de poulet', 1320, 6830, 3200, 4250.0, 76050, document.getElementById('counters-Ailerons de poulet').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      جبدنا على القطايع الكل متع الدجاج... أما فما قطعة ماحكيناش منع جواج مسوطين ومرشوشين بالجلجلان و مصبوب علاهم العسل... حاجة مقربعة وبنينة وصحية...    </p>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/card.js"></script> 
+</body>
+</html>
